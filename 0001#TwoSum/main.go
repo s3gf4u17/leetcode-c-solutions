@@ -1,5 +1,3 @@
-import "fmt"
-
 func twoSum(nums []int, target int) []int {
     hashtable := make(map[int]int)
     for i,num := range nums {
@@ -8,6 +6,5 @@ func twoSum(nums []int, target int) []int {
         }
         hashtable[target-num]=i
     }
-    fmt.Println(hashtable)
     return []int{0,0}
 }
